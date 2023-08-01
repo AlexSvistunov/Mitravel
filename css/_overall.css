@@ -39,7 +39,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .section-title--center {
-	text-emphasis: center;
+	text-align: center;
 	max-width: none;
 
 }
@@ -53,3 +53,4 @@ input[type="search"]::-webkit-search-results-decoration {
     border-radius: 8px;
     color: var(--white-color);
 }
+
