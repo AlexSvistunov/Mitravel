@@ -52,6 +52,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: 29px;
+    transition: color .25s ease-in-out;
+
+}
+
+.footer__column-link:hover {
+    transition: color .25s ease-in-out;
+    color: #2b2c2d;
 
 }
 
@@ -86,6 +93,13 @@
     display: inline-block;
     width: 100%;
     font-weight: 700;
+    transition: background-color .3s ease-in-out;
+}
+
+.sbc-form__btn:hover {
+    transition: background-color .3s ease-in-out;
+    background-color: var(--neptune-hover-color);
+
 }
 
 
@@ -97,15 +111,36 @@
 .footer-bot__body {
     display: flex;
     justify-content: space-between;
-    color: #959EA6;
+
     font-size: 13px;
     font-weight: 400;
 }
+
+.footer-bot__body a {
+    color: #959EA6;
+    transition: color .25s ease-in-out;
+}
+
+.footer-bot__body a:hover {
+    color: #323435;
+    transition: color .25s ease-in-out;
+} 
 .footer-bot__items {
     display: flex;
 }
+
+.footer-bot__item a {
+    color: #959EA6;
+    transition: color .25s ease-in-out;
+}
+
+.footer-bot__item a:hover {
+    color: #323435;
+    transition: color .25s ease-in-out;
+
+}
 .footer-bot__item:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 

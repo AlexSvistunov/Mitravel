@@ -26,6 +26,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social__link:hover {
+    opacity: 0.5;
 }
 
 .social__link--fb {
@@ -54,7 +59,12 @@
 .burger {
     width: 48px;
     height: 10px;
-    position: relative;   
+    position: relative;
+}
+
+.burger:hover .burger__line {
+    background-color: var(--accent-color);
+    transition: .3s ease-in-out;
 }
 
 .burger__line {
@@ -66,9 +76,76 @@
     background-color: var(--white-color);
     right: 0;
     top: 0;
+    transition: .3s ease-in-out;
 }
 
 .burger__line:last-child {
     top: auto;
     bottom: 0;
 }
+
+.menu {
+    position: fixed;
+    z-index: 500;
+    left: -500%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--neptune-color);
+    transition: left 0.3s ease-in-out;
+}
+
+.menu--visible {
+    left: 0;
+    transition: left 0.3s ease-in-out;
+}
+
+.menu__nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__list {
+    padding: 50px;
+    overflow-y: auto;
+    text-align: center;
+}
+.menu__list-item {
+    margin-bottom: 25px;
+}
+.menu__list-link {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu__close {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    right: 10%;
+
+
+}
+
+.menu__close-line {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 3px;
+    left: 0;
+}
+
+.menu__close-line:first-child {
+    transform: rotate(45deg);
+
+}
+
+.menu__close-line:last-child {
+    transform: rotate(-45deg);      
+}
+

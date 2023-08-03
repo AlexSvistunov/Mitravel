@@ -64,7 +64,12 @@
     letter-spacing: 2px;
     font-weight: 600;
     color: #1C2E3D;
+    padding: 20px;
 
+}
+
+.subscribe-form__field::placeholder {
+    padding: 0;
 }
 
 
@@ -75,4 +80,10 @@
     padding-top: 41px;
     width: 100%;
     border-radius: 0px 0px 8px 8px;
+    transition: background-color .3s ease-in-out;
+}
+
+.subscribe-form__btn:hover {
+    background-color: var(--neptune-hover-color);
+    transition: background-color .3s ease-in-out;
 }

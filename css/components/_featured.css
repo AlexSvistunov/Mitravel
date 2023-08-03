@@ -56,7 +56,13 @@
 .blog-article__link {
     background-color: var(--neptune-color);
     display: inline-block;
+    transition: background-color .3s ease-in-out;
     
+}
+
+.blog-article__link:hover {
+    background-color: var(--neptune-hover-color);
+    transition: background-color .3s ease-in-out;
 }
 
 .featured__stories {

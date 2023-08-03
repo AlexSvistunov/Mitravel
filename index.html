@@ -13,6 +13,42 @@
 <body>
 
 	<div class="site-container">
+		<div class="menu">
+			<button class="menu__close btn-reset">
+				<span class="menu__close-line"></span>
+				<span class="menu__close-line"></span>
+			</button>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__list-item">
+						<a class="menu__list-link" href="">Become a Travel Pro</a>
+					</li>
+
+					<li class="menu__list-item">
+						<a class="menu__list-link" href="">How to fly</a>
+					</li>
+
+					<li class="menu__list-item">
+						<a class="menu__list-link" href="">Featured videos</a>
+					</li>
+
+
+					<li class="menu__list-item">
+						<a class="menu__list-link" href="">Sign up</a>
+					</li>
+
+
+					<li class="menu__list-item">
+						<a class="menu__list-link" href="">Inspirations</a>
+					</li>
+
+
+					<li class="menu__list-item">
+						<a class="menu__list-link" href="">Our contacts</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<header class="header">
 			<div class="container header__container flex">
 				<ul class="header__social social">
@@ -65,6 +101,8 @@
 
 						<div class="first__slider main-slider">
 							<div class="swiper-container">
+								<button class="first__slider-btn btn-left btn-reset"></button>
+								<button class="first__slider-btn btn-right btn-reset"></button>
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<div class="main-slider__media">
@@ -76,8 +114,27 @@
 
 										</p>
 									</div>
-									<div class="swiper-slide"></div>
-									<div class="swiper-slide"></div>
+									<div class="swiper-slide">
+										<div class="main-slider__media">
+											<video src="/videos/1.mp4" muted playsinline></video>
+											<button class="main-slider__play btn-reset"></button>
+										</div>
+
+										<p class="main-slider__text">
+											wonderful moutain
+
+										</p>
+									</div>
+									<div class="swiper-slide">
+										<div class="main-slider__media">
+											<img src="/img/slider-1.jpg" alt="Mountains">
+										</div>
+
+										<p class="main-slider__text">
+											wonderful moutain
+
+										</p>
+									</div>
 								</div>
 							</div>
 
@@ -514,10 +571,10 @@
 			<div class="footer-bot">
 				<div class="container">
 					<div class="footer-bot__body">
-						<p>© 2019 Mass Impressions. Designed by Tran Mau Tri Tam for Mass Impressions. All rights reserved.</p>
+						<a href="#">© 2019 Mass Impressions. Designed by Tran Mau Tri Tam for Mass Impressions. All rights reserved.</a>
 						<ul class="footer-bot__items">
-							<li class="footer-bot__item">Terms of Service</li>
-							<li class="footer-bot__item">Privacy Policy</li>
+							<li class="footer-bot__item"><a href="#">Terms of Service</a></li>
+							<li class="footer-bot__item"><a href="#">Privacy Policy</a></li>
 						</ul>
 					</div>
 				</div>

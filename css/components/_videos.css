@@ -17,7 +17,7 @@
     margin-bottom: 30px;
 }
 
-.swiper-slide {
+.slider-container .swiper-slide {
     position: relative;
     background-color: #e3e3e3;
     min-height: 551px;
@@ -34,7 +34,7 @@
     
 }
 
-.swiper-slide::after {
+.slider-container .swiper-slide::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -48,7 +48,7 @@
 }
 
 
-.swiper-slide.swiper-slide-active::after {
+.swiper-slide .swiper-slide-active::after {
     opacity: 1;
 }
 
@@ -58,7 +58,7 @@
     padding: 100px 0;
 }
 
-.swiper-slide-active {
+.slider-container .swiper-slide-active {
     transform: scaleX(1.16) scaleY(1.2);
     transition: transform .3s;
 }
@@ -110,7 +110,6 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .swiper-slide video {
     display: block;
     width: 100%;
